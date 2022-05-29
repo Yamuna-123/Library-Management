@@ -1,0 +1,20 @@
+.logo_img{
+    width: 76px;
+    padding-left: 10px;
+}
+.navbar {
+	background-color:mediumorchid;
+}
+.nav-link {
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    font-weight: 500;
+}
+.navi_linked{
+    position: relative;
+    left: 50%;
+}
+.font_size{
+    font-size: 63px;
+}

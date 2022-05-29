@@ -1,0 +1,53 @@
+25-05-22 02-05-29
+SELECT * FROM login where Username=Excel
+Unknown column 'Excel' in 'where clause'
+
+25-05-22 02-05-55
+SELECT * FROM login where Username=yamunanm9@gmail.com
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com' at line 1
+
+25-05-22 05-05-18
+INSERT INTO member(Firstname,Lastname,Gender,Mobile,DOB,Email) 
+          VALUES('Yamuna','N M','F','9987699876','2000-02-28','anumay@gmail.com')
+Duplicate entry 'anumay@gmail.com' for key 'member.Email'
+
+25-05-22 05-05-05
+INSERT INTO member(Firstname,Lastname,Gender,Mobile,DOB,Email) 
+          VALUES('Yamuna','N M','F','9987699876','2000-02-28','anumay@gmail.in')
+Duplicate entry 'anumay@gmail.in' for key 'member.Email'
+
+25-05-22 05-05-05
+INSERT INTO login(Username,Password,Status) VALUES ('anumay@gmail.in','123@123','U')
+    VALUES('Yamuna','N M','F','9987699876','2000-02-28','anumay@gmail.in')
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VALUES('Yamuna','N M','F','9987699876','2000-02-28','anumay@gmail.in')' at line 2
+
+25-05-22 07-05-04
+INSERT INTO book(Book_Name,Author_Name,Pub_Year,Price,Catg_id,Status,File_Name,File_Path) 
+          VALUES('Alkaloids','Laurent','2010','300','3','Active','','../Uploads/')
+Data too long for column 'Status' at row 1
+
+26-05-22 0202-0559-2323
+SELECT Pl_vald FROM plan where Plan_Id='1'
+Unknown column 'Pl_vald' in 'field list'
+
+26-05-22 0202-0559-2323
+SELECT DATE_ADD('26-05-22',INTERVAL 1)
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+26-05-22 0303-0511-2929
+INSERT INTO member(Status) VALUES('Pending')
+Field 'DOB' doesn't have a default value
+
+26-05-22 07-05-27
+INSERT INTO download VALUES('','1','1')
+Column count doesn't match value count at row 1
+
+26-05-22 07-05-33
+INSERT INTO download VALUES('','1','1')
+Column count doesn't match value count at row 1
+
+
+
+26-05-22 11-05-16
+INSERT INTO download(Mem_Id,Book_Id,Down_Count) VALUES('','4','1')
+Incorrect integer value: '' for column 'Mem_Id' at row 1
